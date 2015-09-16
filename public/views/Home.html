@@ -1,0 +1,26 @@
+<div ng-controller="HomeController as vm" class="pinGrid">
+	<div ng-repeat="pin in vm.pins" class="pinGridWrapper">
+		<div class="pin">
+			
+
+	<div><h3 class="textCenter">{{pin.title}}</h3>
+		
+	<img ng-src="{{pin.img}}">
+    <h4 class="textCenter">{{pin.desc}}</h4> 
+    <button class="borderRadius marginBottom btn btn-warning">
+			-
+	</button>
+		{{pin.likes}}
+	<button class="borderRadius marginBottom btn btn-primary">
+		+
+	</button>
+
+<button ui-sref="PinInfo({id: pin._id})" class="borderRadius marginBottom btn btn-info pull-right">See Pin</button>
+    </div>
+
+</div>				
+</div>
+</div>
+</div>
+
+
